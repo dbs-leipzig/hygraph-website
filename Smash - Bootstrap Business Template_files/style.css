@@ -36,7 +36,14 @@ body {
   box-sizing: border-box; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  }
+
+.transformImg {
+    height: 100px;
+    width: auto;
+    transform: rotate(90deg);
+}
 
 a:focus,
 input:focus,
