@@ -205,19 +205,10 @@
                         between real-world objects. As the structure and content of graphs is continuously changing,
                         e.g.
                         in social networks or transport and mobility networks, novel data models and analysis mechanisms
-                        are needed. Especially the fusion of such temporal graphs with time-series data as well as the
-                        high-
-                        frequency updating by graph streams is an important challenge, which so far has only been
-                        partially
-                        enabled by means of distinct models and analytical systems. Our goal is to develop HyGraph, a
-                        novel hybrid data model that seamlessly combines temporal graphs with time-series and enables
+                        are needed. Our goal is to develop HyGraph, a
+                        new hybrid data model that seamlessly combines temporal graphs with time-series and enables
                         high-frequency updates through graph streams. This combination in a unified hybrid model paves
-                        the way to novel unprecedented query, analysis, data mining and machine learning tasks. By means
-                        of a planned operator concept, both queries and analyses can be executed on the hybrid graphs,
-                        as
-                        well as powerful data mining algorithms such as frequent pattern mining or clustering, which are
-                        enabled by the concatenation operators. The overall system will be prototypically implemented
-                        and its applicability will be demonstrated for at least one use case.</p>
+                        the way to novel unprecedented query, analysis, data mining and machine learning tasks.</p>
                 </div>
             </div>
         </div> <!-- row -->
@@ -300,31 +291,15 @@
             <div class="col-lg-6 col-md-10">
                 <div class="section-title text-center pb-10">
                     <h3 class="title">Hybrid Data Model</h3>
-                    <p class="text">The goal of work package 1 is to design and implement a data model that can
-                        represent both
-                        structured and unstructured data in a hybrid graph database. This data model is intended to
-                        enable efficient querying and analysis of data that is both heterogeneous and
-                        interconnected. <br>
-                        The first task focuses on designing a flexible hybrid graph data model that
-                        can handle both static content and dynamic relationships with streaming data and time series
-                        data. We propose two potential designs: using temporal property graphs to model
-                        relationships among multiple time series or using objectified property graph data models. In
-                        both cases, suitable types and properties need to be defined to encode evolving input data. The
-                        data model should contain informative components for making decisions about which data to keep
-                        up to date in the graphs, and meta-properties for successive versions of time series can
-                        indicate the timeliness, completeness, consistency, and lifespan of the data. <br>
-                        The next task involves the maintenance and updatability of the hybrid graph data model developed
-                        in
-                        the previous task, which combines static content and dynamic relationships with streaming and
-                        time series
-                        data. As new data arrives, the hybrid graph needs to be kept up-to-date, requiring a decision of
-                        which data to maintain based on criteria such as timeliness, completeness, consistency, and
-                        lifespan. The focus is on developing maintenance algorithms for update, insert, and delete
-                        operations to keep the state of the hybrid graph in sync with the evolving input data. Graph
-                        view maintenance approaches developed in previous work are not suitable due to frequent updates
-                        on the input data, so the plan is to use the properties of the hybrid graph to group maintenance
-                        operations as bulk operations. The consistency of the hybrid graph will also be enforced using
-                        mechanisms similar to key constraints for property graphs.
+                    <p class="text">Work package 1 aims to create a data model for a hybrid graph database that can
+                        handle both structured and unstructured data. The first task is to design a flexible data model
+                        that can handle dynamic relationships and time-series data. Two potential designs have been
+                        proposed, and suitable types and properties need to be defined to encode evolving input data.
+                        The next task involves maintaining and updating the hybrid graph data model as new data arrives,
+                        and the focus is on developing maintenance algorithms for update, insert, and delete operations.
+                        The plan is to use the properties of the hybrid graph to group maintenance operations as bulk
+                        operations and to enforce consistency using mechanisms similar to key constraints for property
+                        graphs.
                     </p>
                 </div>
             </div>
@@ -339,26 +314,13 @@
             <div class="col-lg-6 col-md-10">
                 <div class="section-title text-center pb-10">
                     <h3 class="title">Query Operators</h3>
-                    <p class="text">This work package addresses the specification of query and data retrieval primitives
-                        for the HyGraph data
-                        model defined in the <a class="page-scroll" href="#hybridDataModel">Hybrid Data Model -
-                            Section</a> as well as basic analytical operators aiming at working with this new data
-                        model in an OLTP-like context. The goal is to design and implement query operators that
-                        can efficiently retrieve information from hybrid graph databases. These query operators must be
-                        capable of handling the complexity and heterogeneity of the data stored in hybrid graphs,
-                        including both structured and unstructured data. <br><br>
-                        To achieve this goal, this work package is divided into two tasks. The first task involves
-                        reviewing existing query languages and operators for
-                        graph databases, as well as languages and operators for querying structured and unstructured
-                        data. This task aims to identify the strengths and weaknesses of existing approaches and to
-                        determine how they can be adapted or combined to create query operators for hybrid graph
-                        databases. <br> <br>
-
-                        The second task involves designing query operators that can handle the complexity of hybrid
-                        graph data. This task requires a deep understanding of the types of data stored in hybrid
-                        graphs, as well as the relationships between that data. The resulting query operators should be
-                        able to retrieve both entity-centric and relationship-centric information, as well as hybrid
-                        information that combines both entities and relationships.</p>
+                    <p class="text">This work package focuses on designing and implementing query operators for hybrid
+                        graph databases that can efficiently retrieve both structured and unstructured data. The goal is
+                        to address the complexity and heterogeneity of data stored in hybrid graphs. Two tasks have been
+                        identified: reviewing existing query languages and operators for graph databases and designing
+                        query operators that can handle the complexity of hybrid graph data. The resulting query
+                        operators should retrieve both entity-centric and relationship-centric information, as well as
+                        hybrid information that combines both entities and relationships.</p>
                 </div>
             </div>
         </div>
@@ -371,29 +333,15 @@
             <div class="col-lg-6 col-md-10">
                 <div class="section-title text-center pb-10">
                     <h3 class="title">Intelligent Analytics</h3>
-                    <p class="text">We aim at providing a wide variety of state-of-the-art and new analysis and mining
-                        possibilities for the data represented by the new hybrid data model. In addition, we plan to
-                        provide
-                        interfaces to enable classical statistical analysis as well as machine learning (ML) methods.
-                        <br>
-                        The first task aims to enable analytical pipelines that combine basic operators
-                        from <a class="page-scroll" href="#queryOperators">work package 2</a> with known algorithms for
-                        temporal graphs and time series. The task involves defining
-                        operator interfaces for adding temporal graphs, graph streams, or time series information to a
-                        HyGraph instance, as well as retrieving single model information and creating new HyGraph
-                        instances using all the information provided by the separated models. These operator interfaces
-                        allow for the composition of operators, enabling the creation of complex pipelines for more
-                        advanced analytics tasks such as clustering, frequent pattern mining, evolution analysis, and
-                        machine learning-based predictions. This task is a critical component in providing extensibility
-                        and enabling operator chaining for hybrid graphs and main component data structures or models.
-                        <br>
-                        The second task will develop two mining or learning approaches, namely Hybrid Graph Clustering
-                        and
-                        Frequent Hybrid-Graph Mining, that are partially based on previous research on clustering and
-                        frequent subgraph mining. The flexibility of the HyGraph model also allows the adoption of
-                        machine learning, such as Graph Neural Networks (GNNs), to leverage the structural information
-                        contained in the graph. The learned models can be used to perform tasks such as the prediction
-                        of new or missing edges and nodes or relationship-aware time series analysis.
+                    <p class="text">The aim of this work is to provide a variety of analysis and mining possibilities
+                        for the data represented by the hybrid data model, including classical statistical analysis and
+                        machine learning methods. Two tasks have been identified: the first is to enable analytical
+                        pipelines that combine basic operators from work package 2 with algorithms for temporal graphs
+                        and time series, allowing for the creation of complex pipelines for advanced analytics tasks.
+                        The second task involves developing two mining or learning approaches, namely Hybrid Graph
+                        Clustering and Frequent Hybrid-Graph Mining, based on previous research on clustering and
+                        frequent subgraph mining, as well as adopting machine learning such as Graph Neural Networks to
+                        leverage the structural information contained in the graph.
                     </p>
                 </div>
             </div>
@@ -407,36 +355,16 @@
             <div class="col-lg-6 col-md-10">
                 <div class="section-title text-center pb-10">
                     <h3 class="title">Prototype</h3>
-                    <p class="text">The last work package mainly addresses the design and prototypical realization of
-                        the overall system
-                        architecture that is specified by the cooperation of the previously described components,
-                        as well as the application of the model to at least one use case. <br>
-                        In the first task, the focus is on selecting the appropriate systems, technologies, and
-                        libraries that
-                        are extensible and appropriate for implementing the HyGraph model, query, and analysis
-                        operators, as well as complex mining operators. The team will evaluate existing tools and
-                        technologies to determine their limitations, how they can be used in combination, and where
-                        additional implementation is needed. We will investigate whether a centralized solution or a
-                        distributed infrastructure should be pursued. The team will also investigate various physical
-                        infrastructures to store HyGraph instances, such as graph storages, NoSQL stores, stream
-                        systems, and libraries with graph-based ML algorithms. We will reuse concepts from already
-                        developed systems for individual tasks but not the existing implementation due to its use of the
-                        outdated DataSet-API of Apache Flink. <br>
-                        The next task is about implementing and testing the selected systems and technologies.
-                        The implementation will be done in a GitLab instance with version control, issue tracking, code
-                        review, and CI/CD functionalities. The implementation will aim to solve problems such as
-                        combining the selected frameworks to support the HyGraph model, building a base for all query
-                        mechanisms and operators, realizing complex mining operators, and interacting with external
-                        libraries. Challenges such as combining technologies written in different programming languages,
-                        handling large data volumes, and ensuring usability, performance, resource-consumption, and
-                        scalability will be addressed. The goal is to have a prototype that can manage the new hybrid
-                        graph model, allow queries, analysis, mining, ML and insertions of results back to the hybrid
-                        model, and handle data from different stream-like sources. <br>
-                        The last task involves applying the HyGraph model to a selected use case. One use case involves
-                        analyzing bike rental data from Nextbike or Citibike to predict bike availability and user
-                        behavior. The other use case involves using HyGraph to model system calls in order to identify
-                        IT system intrusions. The goal of this task is to demonstrate the effectiveness of HyGraph in
-                        solving real-world problems and to gain experience in optimizing its design and implementation
+                    <p class="text">The last work package of the project focuses on designing and realizing the overall
+                        system architecture based on the HyGraph model, along with applying it to at least one use case.
+                        The first task involves selecting appropriate technologies and evaluating their limitations,
+                        while investigating physical infrastructures to store HyGraph instances. The second task
+                        involves implementing and testing the selected systems and technologies, addressing challenges
+                        such as handling large data volumes and ensuring performance and scalability. Finally, the last
+                        task involves applying the HyGraph model to a selected use case, such as analyzing bike rental
+                        data or modeling system calls to identify IT system intrusions. The goal is to demonstrate the
+                        effectiveness of HyGraph in solving real-world problems and optimizing its design and
+                        implementation.
                     </p>
                 </div>
             </div>
@@ -652,7 +580,8 @@
                     <span class="mail">support@uideck.com</span>
                 </div>
                 <div class="copyright text-center mt-35">
-                    <p class="text">Designed by <a href="https://uideck.com" rel="nofollow">UIdeck</a> and Built-with <a rel="nofollow" href="https://ayroui.com">Ayro UI</a> </p>
+                    <p class="text">Designed by <a href="https://uideck.com" rel="nofollow">UIdeck</a> and Built-with <a
+                            rel="nofollow" href="https://ayroui.com">Ayro UI</a></p>
                 </div> <!--  copyright -->
             </div>
         </div> <!-- row -->
