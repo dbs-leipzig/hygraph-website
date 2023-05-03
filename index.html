@@ -264,7 +264,7 @@
             <div class="col-lg-3 col-md-7 col-sm-9">
                 <div class="single-features mt-40">
                     <div class="features-title-icon d-flex justify-content-between">
-                        <h4 class="features-title">Prototype</a></h4>
+                        <h4 class="features-title">Development and Application</a></h4>
                         <div class="features-icon">
                             <i class="lni lni-bolt"></i>
                             <img class="shape" src="assets/images/f-shape-1.svg" alt="Shape">
@@ -273,7 +273,7 @@
                     <div class="features-content">
                         <p class="text">Short description for the ones who look for something new. Short description for
                             the ones who look for something new.</p>
-                        <a class="features-btn page-scroll" href="#prototype">LEARN MORE</a>
+                        <a class="features-btn page-scroll" href="#Development and Application">LEARN MORE</a>
                     </div>
                 </div>
             </div>
@@ -291,15 +291,10 @@
             <div class="col-lg-6 col-md-10">
                 <div class="section-title text-center pb-10">
                     <h3 class="title">Hybrid Data Model</h3>
-                    <p class="text">Work package 1 aims to create a data model for a hybrid graph database that can
-                        handle both structured and unstructured data. The first task is to design a flexible data model
-                        that can handle dynamic relationships and time-series data. Two potential designs have been
-                        proposed, and suitable types and properties need to be defined to encode evolving input data.
-                        The next task involves maintaining and updating the hybrid graph data model as new data arrives,
-                        and the focus is on developing maintenance algorithms for update, insert, and delete operations.
-                        The plan is to use the properties of the hybrid graph to group maintenance operations as bulk
-                        operations and to enforce consistency using mechanisms similar to key constraints for property
-                        graphs.
+                    <p class="text">The HyGraph model combines temporal graphs and time series into a single
+                        abstraction. Real-time graph streams are used to continuously update the hybrid graph. The model
+                        includes data representation, maintenance operations, updatability, and retrieval and querying
+                        of substructures while ensuring consistency with inference or integrity rules.
                     </p>
                 </div>
             </div>
@@ -314,13 +309,10 @@
             <div class="col-lg-6 col-md-10">
                 <div class="section-title text-center pb-10">
                     <h3 class="title">Query Operators</h3>
-                    <p class="text">This work package focuses on designing and implementing query operators for hybrid
-                        graph databases that can efficiently retrieve both structured and unstructured data. The goal is
-                        to address the complexity and heterogeneity of data stored in hybrid graphs. Two tasks have been
-                        identified: reviewing existing query languages and operators for graph databases and designing
-                        query operators that can handle the complexity of hybrid graph data. The resulting query
-                        operators should retrieve both entity-centric and relationship-centric information, as well as
-                        hybrid information that combines both entities and relationships.</p>
+                    <p class="text">Operators will be developed to utilize the new data model and all substructures,
+                        allowing a wide range of options for combining OLTP and OLAP approaches to create new types of
+                        analytics. The hybrid operator has access to the temporal graph, modeled time series, and
+                        incoming changes from the graph stream.</p>
                 </div>
             </div>
         </div>
@@ -333,15 +325,9 @@
             <div class="col-lg-6 col-md-10">
                 <div class="section-title text-center pb-10">
                     <h3 class="title">Intelligent Analytics</h3>
-                    <p class="text">The aim of this work is to provide a variety of analysis and mining possibilities
-                        for the data represented by the hybrid data model, including classical statistical analysis and
-                        machine learning methods. Two tasks have been identified: the first is to enable analytical
-                        pipelines that combine basic operators from work package 2 with algorithms for temporal graphs
-                        and time series, allowing for the creation of complex pipelines for advanced analytics tasks.
-                        The second task involves developing two mining or learning approaches, namely Hybrid Graph
-                        Clustering and Frequent Hybrid-Graph Mining, based on previous research on clustering and
-                        frequent subgraph mining, as well as adopting machine learning such as Graph Neural Networks to
-                        leverage the structural information contained in the graph.
+                    <p class="text">With HyGraph we will develop new types of analytics and data mining operators that
+                        benefit from the model combination. It further offers new ways of predictions through AI-based
+                        models.
                     </p>
                 </div>
             </div>
@@ -349,26 +335,20 @@
     </div>
 </section>
 
-<section id="prototype" class="pricing-area pb-100">
+<section id="Development and Application" class="pricing-area pb-100">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-10">
                 <div class="section-title text-center pb-10">
-                    <h3 class="title">Prototype</h3>
-                    <p class="text">The last work package of the project focuses on designing and realizing the overall
-                        system architecture based on the HyGraph model, along with applying it to at least one use case.
-                        The first task involves selecting appropriate technologies and evaluating their limitations,
-                        while investigating physical infrastructures to store HyGraph instances. The second task
-                        involves implementing and testing the selected systems and technologies, addressing challenges
-                        such as handling large data volumes and ensuring performance and scalability. Finally, the last
-                        task involves applying the HyGraph model to a selected use case, such as analyzing bike rental
-                        data or modeling system calls to identify IT system intrusions. The goal is to demonstrate the
-                        effectiveness of HyGraph in solving real-world problems and optimizing its design and
-                        implementation.
+                    <h3 class="title">Development and Application</h3>
+                    <p class="text">The new data model, operators and analysis approaches will prototypically be
+                        implemented, evaluated and applied to at least one use case either from the micro-mobility
+                        domain (bike sharing) or from the IT security domain.
                     </p>
                 </div>
             </div>
         </div>
+        <img src="assets/images/bikeUseCase.png">
     </div>
 </section>
 
@@ -394,7 +374,8 @@
                     <div class="team-content">
                         <div class="team-social">
                             <ul class="social">
-                                <li><a href="https://fr.linkedin.com/in/angela-bonifati-11856526"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="https://fr.linkedin.com/in/angela-bonifati-11856526"><i
+                                        class="lni lni-linkedin-original"></i></a></li>
                             </ul>
                         </div>
                         <h4 class="team-name"><a href="#">Prof. Dr. Angela Bonifati (PI)</a></h4>
@@ -412,7 +393,8 @@
                     <div class="team-content">
                         <div class="team-social">
                             <ul class="social">
-                                <li><a href="https://fr.linkedin.com/in/r%C3%A9my-cazabet-a988396?trk=pub-pbmap"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="https://fr.linkedin.com/in/r%C3%A9my-cazabet-a988396?trk=pub-pbmap"><i
+                                        class="lni lni-linkedin-original"></i></a></li>
                             </ul>
                         </div>
                         <h4 class="team-name"><a href="#">Dr. Remy Cazabet</a></h4>
@@ -430,7 +412,8 @@
                     <div class="team-content">
                         <div class="team-social">
                             <ul class="social">
-                                <li><a href="https://www.linkedin.com/in/rictomm/"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/rictomm/"><i
+                                        class="lni lni-linkedin-original"></i></a></li>
                             </ul>
                         </div>
                         <h4 class="team-name"><a href="#">Dr. Riccardo Tommasini</a></h4>
@@ -466,7 +449,8 @@
                     <div class="team-content">
                         <div class="team-social">
                             <ul class="social">
-                                <li><a href="https://de.linkedin.com/in/erhard-rahm-bba6597"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="https://de.linkedin.com/in/erhard-rahm-bba6597"><i
+                                        class="lni lni-linkedin-original"></i></a></li>
                             </ul>
                         </div>
                         <h4 class="team-name"><a href="#">Prof. Dr. Erhard Rahm (PI)</a></h4>
@@ -484,7 +468,8 @@
                     <div class="team-content">
                         <div class="team-social">
                             <ul class="social">
-                                <li><a href="https://de.linkedin.com/in/eric-peukert-49b583119"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="https://de.linkedin.com/in/eric-peukert-49b583119"><i
+                                        class="lni lni-linkedin-original"></i></a></li>
                             </ul>
                         </div>
                         <h4 class="team-name"><a href="#">Dr. Eric Peukert</a></h4>
@@ -502,7 +487,8 @@
                     <div class="team-content">
                         <div class="team-social">
                             <ul class="social">
-                                <li><a href="https://de.linkedin.com/in/christopher-rost-603139180"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="https://de.linkedin.com/in/christopher-rost-603139180"><i
+                                        class="lni lni-linkedin-original"></i></a></li>
                             </ul>
                         </div>
                         <h4 class="team-name"><a href="#">Christopher Rost</a></h4>
