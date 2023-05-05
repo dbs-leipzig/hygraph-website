@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 
     <!--====== Title ======-->
-    <title>Smash - Bootstrap Business Template</title>
+    <title>HyGraph - A project combining temporal graphs with time series and graph streams</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,6 +30,9 @@
 
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--====== Custom CSS ======-->
+    <link rel="stylesheet" href="assets/css/custom.css">
 
 </head>
 
@@ -89,7 +92,13 @@
 
                     <div class="navbar-btn d-none d-sm-inline-block">
                         <ul>
-                            <li><a class="solid page-scroll" href="#team">Contact Us</a></li>
+                            <li><SCRIPT
+                                    LANGUAGE="JavaScript">user = 'hygraph';
+                            site = 'uni-leipzig.de';
+                            document.write('<a class="solid page-scroll" href=\"mailto:' + user + '@' +
+                                site + '\">');
+                            document.write('Contact Us</a>');</SCRIPT>
+                            </li>
                         </ul>
                     </div>
                 </nav> <!-- navbar -->
@@ -216,15 +225,16 @@
             <div class="col-lg-3 col-md-5 col-sm-9">
                 <div class="single-features mt-40">
                     <div class="features-title-icon d-flex justify-content-between">
-                        <h4 class="features-title">Hybrid Data Models</a></h4>
+                        <h4 class="features-title">Hybrid Data Model</h4>
                         <div class="features-icon">
                             <i class="lni lni-brush"></i>
                             <img class="shape" src="assets/images/f-shape-1.svg" alt="Shape">
                         </div>
                     </div>
                     <div class="features-content">
-                        <p class="text">Short description for the ones who look for something new. Short description for
-                            the ones who look for something new.</p>
+                        <p class="text">
+                            The HyGraph model combines temporal graphs and time series with real-time
+                            graph streams into a single abstraction. </p>
                         <a class="features-btn page-scroll" href="#hybridDataModel">LEARN MORE</a>
                     </div>
                 </div> <!-- single features -->
@@ -239,8 +249,10 @@
                         </div>
                     </div>
                     <div class="features-content">
-                        <p class="text">Short description for the ones who look for something new. Short description for
-                            the ones who look for something new.</p>
+                        <p class="text">Hybrid operators will be developed to utilize the new data model and
+                            all
+                            substructures, allowing a wide range of options for combining OLTP and
+                            OLAP approaches to create new types of analytics.</p>
                         <a class="features-btn page-scroll" href="#queryOperators">LEARN MORE</a>
                     </div>
                 </div> <!-- single features -->
@@ -255,8 +267,9 @@
                         </div>
                     </div>
                     <div class="features-content">
-                        <p class="text">Short description for the ones who look for something new. Short description for
-                            the ones who look for something new.</p>
+                        <p class="text">With HyGraph we will develop new types of analytics and data mining
+                            operators that benefit from the model combination.
+                            It further offers new ways of predictions through AI-based models.</p>
                         <a class="features-btn page-scroll" href="#intelligentAnalytics">LEARN MORE</a>
                     </div>
                 </div> <!-- single features -->
@@ -271,8 +284,9 @@
                         </div>
                     </div>
                     <div class="features-content">
-                        <p class="text">Short description for the ones who look for something new. Short description for
-                            the ones who look for something new.</p>
+                        <p class="text">The new data model, operators and analysis approaches will
+                            prototypically be implemented, evaluated and applied to use
+                            cases from the micro-mobility and IT security domain.</p>
                         <a class="features-btn page-scroll" href="#Development and Application">LEARN MORE</a>
                     </div>
                 </div>
@@ -296,10 +310,23 @@
                         includes data representation, maintenance operations, updatability, and retrieval and querying
                         of substructures while ensuring consistency with inference or integrity rules.
                     </p>
+                    <p class="text">
+                        One of our tasks is to design a flexible data model
+                        that can handle dynamic relationships and time-series data.
+                        Two potential designs have already been
+                        proposed, and suitable types and properties need to be defined to encode
+                        evolving input data.
+                        We will support maintaining and updating the hybrid graph data model as new data
+                        arrives,
+                        and the focus is on developing maintenance algorithms for update, insert, and delete operations.
+                        The plan is to use the properties of the hybrid graph to group maintenance operations as bulk
+                        operations and to enforce consistency using mechanisms similar to key constraints for property
+                        graphs.
+                    </p>
                 </div>
+                <img src="assets/images/ModelCombination_v2.svg" alt="Model Combination" class="box-image">
             </div>
         </div>
-        <img src="assets/images/ModelCombination_v2.svg">
     </div>
 </section>
 
@@ -313,7 +340,17 @@
                         allowing a wide range of options for combining OLTP and OLAP approaches to create new types of
                         analytics. The hybrid operator has access to the temporal graph, modeled time series, and
                         incoming changes from the graph stream.</p>
+                    <p class="text">
+                        We focus on designing and implementing query operators for hybrid
+                        graph databases that can efficiently retrieve both structured and unstructured data. The goal is
+                        to address the complexity and heterogeneity of data stored in hybrid graphs. Two tasks have been
+                        identified: reviewing existing query languages and operators for graph databases and designing
+                        query operators that can handle the complexity of hybrid graph data. The resulting query
+                        operators should retrieve both entity-centric and relationship-centric information, as well as
+                        hybrid information that combines both entities and relationships.
+                    </p>
                 </div>
+                <img src="assets/images/hygraph-operators.png" alt="HyGraph Operators" class="box-image">
             </div>
         </div>
     </div>
@@ -325,11 +362,20 @@
             <div class="col-lg-6 col-md-10">
                 <div class="section-title text-center pb-10">
                     <h3 class="title">Intelligent Analytics</h3>
-                    <p class="text">With HyGraph we will develop new types of analytics and data mining operators that
-                        benefit from the model combination. It further offers new ways of predictions through AI-based
-                        models.
+                    <p class="text">With HyGraph we aim to provide a variety of analysis and
+                        mining possibilities
+                        for the data represented by the hybrid data model, including classical statistical analysis and
+                        machine learning methods. Two tasks have been identified: the first is to enable analytical
+                        pipelines that combine basic operators with algorithms for temporal graphs
+                        and time series, allowing for the creation of complex pipelines for advanced analytics tasks.
+                        The second task involves developing two mining or learning approaches, namely Hybrid Graph
+                        Clustering and Frequent Hybrid-Graph Mining, based on previous research on clustering and
+                        frequent subgraph mining, as well as adopting machine learning such as Graph Neural Networks to
+                        leverage the structural information contained in the graph.
                     </p>
                 </div>
+                <img src="assets/images/hygraph-operator-combination.png" alt="HyGraph Operator Combination"
+                     class="box-image">
             </div>
         </div>
     </div>
@@ -345,10 +391,20 @@
                         implemented, evaluated and applied to at least one use case either from the micro-mobility
                         domain (bike sharing) or from the IT security domain.
                     </p>
+                    <p class="text">
+                        We will design and realize the overall
+                        system architecture based on the HyGraph model and addressing challenges
+                        such as handling large data volumes and ensuring performance and scalability. We
+                        will apply it to use cases such as analyzing bike rental
+                        data or modeling system calls to identify IT system intrusions. The goal is to demonstrate the
+                        effectiveness of HyGraph in solving real-world problems and optimizing its design and
+                        implementation.
+                    </p>
                 </div>
+                <img src="assets/images/bikeUseCase.png" alt="Use Case" class="box-image">
             </div>
         </div>
-        <img src="assets/images/bikeUseCase.png">
+
     </div>
 </section>
 
@@ -374,6 +430,13 @@
                             <ul class="social">
                                 <li><a href="https://fr.linkedin.com/in/angela-bonifati-11856526"><i
                                         class="lni lni-linkedin-original"></i></a></li>
+                                <!-- Mail block -->
+                                <li><SCRIPT
+                                        LANGUAGE="JavaScript">user = 'Angela.Bonifati';
+                                site = 'univ-lyon1.fr';
+                                document.write('<a href=\"mailto:' + user + '@' + site + '\">');
+                                document.write('<i class="lni lni-envelope"></i></a>');</SCRIPT>
+                                </li>
                             </ul>
                         </div>
                         <h4 class="team-name"><a href="#">Prof. Dr. Angela Bonifati (PI)</a></h4>
@@ -393,6 +456,12 @@
                             <ul class="social">
                                 <li><a href="https://fr.linkedin.com/in/r%C3%A9my-cazabet-a988396?trk=pub-pbmap"><i
                                         class="lni lni-linkedin-original"></i></a></li>
+                                <li><SCRIPT
+                                        LANGUAGE="JavaScript">user = 'remy.cazabet';
+                                site = 'gmail.com';
+                                document.write('<a href=\"mailto:' + user + '@' + site + '\">');
+                                document.write('<i class="lni lni-envelope"></i></a>');</SCRIPT>
+                                </li>
                             </ul>
                         </div>
                         <h4 class="team-name"><a href="#">Dr. Remy Cazabet</a></h4>
@@ -412,6 +481,12 @@
                             <ul class="social">
                                 <li><a href="https://www.linkedin.com/in/rictomm/"><i
                                         class="lni lni-linkedin-original"></i></a></li>
+                                <!-- Mail block -->
+                                <li><SCRIPT
+                                        LANGUAGE="JavaScript">user = 'riccardo.tommasini';
+                                site = 'insa-lyon.fr';
+                                document.write('<a href=\"mailto:' + user + '@' + site + '\">');
+                                document.write('<i class="lni lni-envelope"></i></a>');</SCRIPT>
                             </ul>
                         </div>
                         <h4 class="team-name"><a href="#">Dr. Riccardo Tommasini</a></h4>
@@ -449,6 +524,13 @@
                             <ul class="social">
                                 <li><a href="https://de.linkedin.com/in/erhard-rahm-bba6597"><i
                                         class="lni lni-linkedin-original"></i></a></li>
+                                <!-- Mail block -->
+                                <li><SCRIPT
+                                        LANGUAGE="JavaScript">user = 'rahm';
+                                site = 'informatik.uni-leipzig.de';
+                                document.write('<a href=\"mailto:' + user + '@' + site + '\">');
+                                document.write('<i class="lni lni-envelope"></i></a>');</SCRIPT>
+                                </li>
                             </ul>
                         </div>
                         <h4 class="team-name"><a href="#">Prof. Dr. Erhard Rahm (PI)</a></h4>
@@ -468,6 +550,13 @@
                             <ul class="social">
                                 <li><a href="https://de.linkedin.com/in/eric-peukert-49b583119"><i
                                         class="lni lni-linkedin-original"></i></a></li>
+                                <!-- Mail block -->
+                                <li><SCRIPT
+                                        LANGUAGE="JavaScript">user = 'peukert';
+                                site = 'informatik.uni-leipzig.de';
+                                document.write('<a href=\"mailto:' + user + '@' + site + '\">');
+                                document.write('<i class="lni lni-envelope"></i></a>');</SCRIPT>
+                                </li>
                             </ul>
                         </div>
                         <h4 class="team-name"><a href="#">Dr. Eric Peukert</a></h4>
@@ -487,6 +576,13 @@
                             <ul class="social">
                                 <li><a href="https://de.linkedin.com/in/christopher-rost-603139180"><i
                                         class="lni lni-linkedin-original"></i></a></li>
+                                <!-- Mail block -->
+                                <li><SCRIPT
+                                        LANGUAGE="JavaScript">user = 'rost';
+                                        site = 'informatik.uni-leipzig.de';
+                                        document.write('<a href=\"mailto:' + user + '@' + site + '\">');
+                                        document.write('<i class="lni lni-envelope"></i></a>');</SCRIPT>
+                                </li>
                             </ul>
                         </div>
                         <h4 class="team-name"><a href="#">Christopher Rost</a></h4>
@@ -537,8 +633,9 @@
                     <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>-->
                 </ul> <!-- social -->
                 <div class="footer-support text-center">
-                    <span class="number">+8801234567890</span>
-                    <span class="mail">support@uideck.com</span>
+                    <!--<span class="number">+8801234567890</span>-->
+                    <span class="mail"><SCRIPT
+                            LANGUAGE="JavaScript">user = 'hygraph';site = 'uni-leipzig.de';document.write('<a href=\"mailto:' + user + '@' + site + '\">');document.write(user + '@' + site + '</a>');</SCRIPT></span>
                 </div>
                 <div class="copyright text-center mt-35">
                     <p class="text">Designed by <a href="https://uideck.com" rel="nofollow">UIdeck</a> and Built-with <a
