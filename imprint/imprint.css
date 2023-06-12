@@ -1,0 +1,18 @@
+.imprint-infos{
+    font-size: 20px;
+
+    text-align: start;
+    line-height: 3;
+   
+    word-spacing: 4px;
+}
+.texte,.custom-h4{
+    color: white;
+}
+.custom-h4{
+    margin: 50px 0;
+}
+.email-color{
+    color: white !important;
+    text-decoration: underline;
+}

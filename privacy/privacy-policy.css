@@ -1,0 +1,12 @@
+h2, h3, p {
+  color: white !important;
+
+  margin: 22px 0 !important;
+}
+.p-justify{
+  text-align: justify;
+}
+.imprint-page{
+  font-weight: bold;
+  color: white;
+}
