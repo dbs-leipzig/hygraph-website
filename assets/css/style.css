@@ -3245,6 +3245,6 @@ p.form-message.success, p.form-message.error {
     background-color: #0067f4; }
 
 /*# sourceMappingURL=style.css.map */
-.text{
-text-align: justify;
+p.text {
+    text-align: justify !important;
 }
