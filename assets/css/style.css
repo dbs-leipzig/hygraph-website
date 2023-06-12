@@ -91,7 +91,10 @@ p {
   font-weight: 400;
   line-height: 24px;
   color: #121212;
-  margin: 0px; }
+  margin: 0px; 
+  text-align: justify !important;
+
+}
 
 .bg_cover {
   background-position: center center;
@@ -3245,6 +3248,4 @@ p.form-message.success, p.form-message.error {
     background-color: #0067f4; }
 
 /*# sourceMappingURL=style.css.map */
-p.text {
-    text-align: justify !important;
-}
+
