@@ -89,8 +89,19 @@ $(function() {
             scrollTop: 0,
         }, 1500);
     });
+     // Simple scroll animation for the rectangles
+    // Function to add the 'visible' class to the content sections when they are in the viewport
+    function revealOnScroll() {
+        $('.content-section').each(function() {
+            var windowHeight = $(window).height();
+            var elementTop = $(this).offset().top;
+            var elementVisible = 100;
     
-    
+            if (elementTop < $(window).scrollTop() + windowHeight - elementVisible) {
+                $(this).addClass("visible");
+            }
+        });
+    }window.addEventListener("scroll", revealOnScroll);
     //===== 
     
     

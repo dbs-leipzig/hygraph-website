@@ -3255,3 +3255,196 @@ p.form-message.success, p.form-message.error {
 
 /*# sourceMappingURL=style.css.map */
 
+/*************News**************/
+#news {
+  background-color: #0067f433;
+  border-style: solid;
+  border-color: #0067f473;
+  border-width: 0.5px;
+}
+
+.title-news {
+  margin-bottom: 28px;
+ 
+}
+.meeting-img{
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(72, 127, 255, 0.1);
+  -moz-box-shadow: 0px 8px 16px 0px rgba(72, 127, 255, 0.1);
+  box-shadow: 0px 8px 16px 0px rgba(72, 127, 255, 0.1);
+
+}
+.custom-carousel-indicators {
+
+  color: #0067f4;
+}
+
+.custom-carousel-item {
+  background-color: transparent !important;
+}
+
+.custom-slider-content .title {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+color: #0067f4 !important;
+
+
+}
+.custom-slider-content .text{
+  color: #000 !important;
+text-align: justify;
+line-height: 33px;
+}
+.custom-carousel-indicators {
+
+  color: #0067f4;
+}
+.custom-carousel-item::before{
+  
+  opacity: 0.3;
+}
+.carousel .custom-carousel-control-prev,
+.carousel .custom-carousel-control-next {
+  color: #0067f4 !important;
+  border: 1px solid #0067f447;
+}
+.custom-carousel-indicators li.active {
+  background-color: #0067f4 !important;
+}
+.custom-carousel-indicators li.active {
+  border-color: #0067f4 !important;
+}
+
+/******************************related publication************************/
+/* Animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.content-section {
+  
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.content-section.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.card {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 12px;
+  transform: scale(0.95);
+  transition: transform 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This will push the button to the bottom */
+
+}
+
+.card:hover {
+  transform: scale(1);
+}
+
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+  color: #0052cc; /* Adjust the title color as needed */
+}
+
+.card p {
+  font-size: 15px;
+  color: #6c6c6c
+}
+
+.card button {
+  background-color: #0052cc; /* Adjust button color as needed */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #003d99; /* Darker shade for button hover state */
+}
+
+.slide-indicator {
+  text-align: center;
+}
+
+.slide-indicator span {
+  height: 15px;
+  width: 15px;
+  background-color: #bbbbbb; /* Light grey circles */
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.slide-indicator span.active {
+  background-color: #0052cc; /* Active slide circle */
+  
+}
+.meeting-card{
+  position: relative;
+  top: -295px;
+}
+
+
+.media-scroller {
+  justify-content: center;
+  --_spacer: var(--size-3);
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+
+  padding: 0 var(--_spacer) var(--_spacer);
+
+  
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.media-scroller::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #0067f4;
+  height: 10px;
+}
+.media-scroller--with-groups {
+  grid-auto-columns: 80%;
+}
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 15px;
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+.paper-link{
+  text-decoration: none;
+  color: white;
+}
