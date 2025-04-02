@@ -2545,7 +2545,15 @@ overflow: hidden;}
   background-color: #f4f6f7;
   padding-top: 120px;
   padding-bottom: 130px; }
-
+.features-area .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.features-content {
+  flex-grow: 1; /* this pushes the button/link to the bottom */
+  display: flex;
+  flex-direction: column;
+}
 .single-features {
   padding: 40px 20px 52px;
   background-color: #fff; }
@@ -2595,7 +2603,7 @@ overflow: hidden;}
     color: #0067f4;
     font-size: 16px;
     font-weight: 700;
-    margin-top: 29px; }
+    margin-top: auto;}
 
 /*===========================
       18.PORTFOLIO css 
